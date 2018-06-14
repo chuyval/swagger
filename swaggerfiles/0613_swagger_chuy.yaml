@@ -1,0 +1,38 @@
+# https://swagger.io/docs/specification/2-0/basic-structure/
+# https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md
+
+# Metadata
+
+# Version
+swagger: "2.0"
+
+# API Info
+info:
+  # Required: Title of Application
+  title: Sample API
+  # Optional
+  description: API description in Markdown.
+  # Required: API Version. Can be random string. Use
+  version: 1.0.0
+host: api.example.com
+basePath: /v1
+# Schemes can also be specified with:
+# schemes: [http, https]
+schemes:
+#  - https
+  - http
+#  - ws
+#  - wss
+consumes:
+ - application/json
+ - application/xml
+paths:
+  /users:
+    get:
+      summary: Returns a list of users.
+      description: Optional extended description in Markdown.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
