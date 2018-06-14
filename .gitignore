@@ -25,3 +25,6 @@ models
 cmd
 !restapi/configure_hiota.go
 restapi
+
+# Internal
+internal
